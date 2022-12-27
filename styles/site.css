@@ -422,6 +422,18 @@ button:hover {
   overflow: hidden;
 }
 
+.twotitles {
+  padding-bottom: 0;
+}
+
+#lifeca {
+  padding-top: 0;
+}
+
+.subtitles h1 {
+  font-family: cursive;
+}
+
 #section3{
   width: 100%;
   height: 840px;
