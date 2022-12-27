@@ -12,9 +12,9 @@ body figure img {
   margin: auto;
 }
 
-/* #section3{
+body{
   overflow:hidden;
-} */
+}
 
 body figure figcaption {
   width: 50%;
