@@ -324,8 +324,8 @@ body ul li figure {
 }
 
 body ul li figure img {
-  width: 450px;
-  height: 600px;
+  width: 35%;
+  height: 45%;
 }
 
 .overlay {
