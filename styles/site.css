@@ -434,6 +434,14 @@ button:hover {
   font-family: cursive;
 }
 
+.caro {
+  margin-top: 0;
+}
+
+#crittitle {
+  margin-top: 0;
+}
+
 #section3{
   width: 100%;
   height: 840px;
