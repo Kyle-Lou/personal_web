@@ -12,6 +12,10 @@ body figure img {
   margin: auto;
 }
 
+body{
+  overflow:hidden;
+}
+
 body figure figcaption {
   width: 50%;
   height: 30%;
