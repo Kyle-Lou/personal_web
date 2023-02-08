@@ -100,7 +100,7 @@ allSections.forEach(function (section) {
     section.classList.add('section--hidden');
 });
 
-//open resume
+///open resume
 function openImg() {
     window.open("https://drive.google.com/file/d/1FdVrUUabp2MiY_H9jC9Hygl60xtOHCaQ/view?usp=sharing");
 }
