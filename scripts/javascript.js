@@ -102,7 +102,7 @@ allSections.forEach(function (section) {
 
 ///open resume
 function openImg() {
-    window.open("https://drive.google.com/file/d/1FdVrUUabp2MiY_H9jC9Hygl60xtOHCaQ/view?usp=sharing");
+    window.open(https://drive.google.com/file/d/18W6kZRY4LzPSxmEmIPcmGoEzpVnWyoBd/view?usp=sharing);
 }
 
 //section scroll
