@@ -34,6 +34,7 @@ $(".lbtn").click(function () {
 });
 
 $(".rbtn").click(function () {
+    console.log("aaaaaaaaaaaa");
     nextSlide();
 });
 
