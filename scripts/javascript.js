@@ -101,10 +101,10 @@ allSections.forEach(function (section) {
     section.classList.add('section--hidden');
 });
 
-///open resume
-function openImg() {
-    window.open("https://drive.google.com/file/d/18W6kZRY4LzPSxmEmIPcmGoEzpVnWyoBd/view?usp=sharing");
-}
+// ///open resume
+// function openImg() {
+//     window.open("https://drive.google.com/file/d/18W6kZRY4LzPSxmEmIPcmGoEzpVnWyoBd/view?usp=sharing");
+// }
 
 //section scroll.
 
