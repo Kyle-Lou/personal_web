@@ -281,8 +281,7 @@ body {
 }
 
 #headshot:hover {
-  opacity: 50%;
-  cursor:none;
+  cursor:auto;
 }
 
 .endnote {
