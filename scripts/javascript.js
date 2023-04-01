@@ -105,7 +105,7 @@ function openImg() {
     window.open(https://drive.google.com/file/d/18W6kZRY4LzPSxmEmIPcmGoEzpVnWyoBd/view?usp=sharing);
 }
 
-//section scroll
+//section scroll.
 
 document.querySelector('.navlinks').addEventListener('click', function (e) {
     e.preventDefault();
