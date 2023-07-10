@@ -247,8 +247,8 @@ body {
   color: rgb(20, 107, 193);
 }
 
-#unity {
-  color: rgb(178, 177, 177);
+#flask {
+  color: rgb(250, 2, 2);
 }
 
 #javascript {
@@ -349,9 +349,9 @@ body ul li figure img {
   max-width: 150rem;
   max-height: 150rem;
   justify-content: center;
-  background-color: rgb(6, 6, 6);
+  background-color: white;
   padding: 6rem 8rem;
-  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4rem 6rem white;
   z-index: 1000;
   transition: all 0.5s;
   width: 80vw;
@@ -546,8 +546,8 @@ body {
 }
 
 .modal__header {
-  margin-top: 20%;
-  color: white;
+  margin-top: 17%;
+  color: black;
 }
 
 .overlay,
@@ -561,7 +561,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: black;
+  background-color: white;
   z-index: 900;
   display: none;
   opacity: 0;
