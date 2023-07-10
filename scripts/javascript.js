@@ -1,26 +1,34 @@
-'use strict';
+"use strict";
 // sticky nav bar
-window.onscroll = function () { myFunction() };
+window.onscroll = function () {
+  myFunction();
+};
 var navbar = $(".nav");
 var sticky = 70;
+
 function myFunction() {
-    if (window.pageYOffset >= sticky) {
-        navbar.addClass("sticky")
-    } else {
-        navbar.removeClass("sticky");
-    }
+  if (window.pageYOffset >= sticky) {
+    navbar.addClass("sticky");
+  } else {
+    navbar.removeClass("sticky");
+  }
 }
 
-//welcome page modal
-$("index.html").ready(function () {
-    $(".overlay").removeClass('hidden');
-    $(".modal").removeClass('hidden');
+$(document).ready(function () {
+  $(".overlay").css("display", "flex").hide().fadeIn();
+  $(".modal").css("display", "flex").hide().fadeIn();
+
+  setTimeout(function () {
+    $(".overlay").animate({ opacity: 0 }, 1500, "linear", function () {
+      $(this).css("display", "none");
+    });
+    $(".modal").animate({ opacity: 0 }, 1500, "linear", function () {
+      $(this).css("display", "none");
+    });
+  }, 0);
 });
 
-$("#butt").click(function () {
-    $(".overlay").fadeOut();
-    $(".modal   ").fadeOut();
-});
+// Remaining code as is ...
 
 // Carousel for Life Page
 const SLIDES = $(".slide");
@@ -30,75 +38,77 @@ let nextNum = 0;
 showSlide1(0);
 
 $(".lbtn").click(function () {
-    prevSlide();
+  prevSlide();
 });
 
 $(".rbtn").click(function () {
-    console.log("aaaaaaaaaaaa");
-    nextSlide();
+  console.log("aaaaaaaaaaaa");
+  nextSlide();
 });
 
 function nextSlide() {
-    if (nextNum >= 3) {
-        nextNum = 0;
-    } else {
-        nextNum++;
-    }
-    prevNum = nextNum;
-    showSlide2(nextNum);
+  if (nextNum >= 3) {
+    nextNum = 0;
+  } else {
+    nextNum++;
+  }
+  prevNum = nextNum;
+  showSlide2(nextNum);
 }
 
 function prevSlide() {
-    if (prevNum <= 0) {
-        prevNum = 3;
-    } else {
-        prevNum--;
-    }
-    nextNum = prevNum;
-    showSlide2(prevNum);
+  if (prevNum <= 0) {
+    prevNum = 3;
+  } else {
+    prevNum--;
+  }
+  nextNum = prevNum;
+  showSlide2(prevNum);
 }
 
-
 function showSlide1(num) {
-    let currentSlide = SLIDES.eq(num);
-    SLIDES.addClass("hidden");
-    currentSlide.removeClass("hidden");
+  let currentSlide = SLIDES.eq(num);
+  SLIDES.addClass("hidden");
+  currentSlide.removeClass("hidden");
 }
 
 function showSlide2(num) {
-    let currentSlide = SLIDES.eq(num);
-    SLIDES.addClass("hidden");
-    currentSlide.removeClass("hidden");
-    currentSlide.addClass("fade-in");
+  let currentSlide = SLIDES.eq(num);
+  SLIDES.addClass("hidden");
+  currentSlide.removeClass("hidden");
+  currentSlide.addClass("fade-in");
 }
 
 //
-$("#headshot").hover(function () {
+$("#headshot").hover(
+  function () {
     $("#over").removeClass("hidden");
-}, function () {
+  },
+  function () {
     $("#over").addClass("hidden");
-});
+  }
+);
 
 // page reveal
-const allSections = document.querySelectorAll('.subsection');
+const allSections = document.querySelectorAll(".subsection");
 
 const revealSection = function (entries, observer) {
-    const [entry] = entries;
+  const [entry] = entries;
 
-    if (!entry.isIntersecting) return;
+  if (!entry.isIntersecting) return;
 
-    entry.target.classList.remove('section--hidden');
-    observer.unobserve(entry.target);
+  entry.target.classList.remove("section--hidden");
+  observer.unobserve(entry.target);
 };
 
 const sectionObserver = new IntersectionObserver(revealSection, {
-    root: null,
-    threshold: 0.1,
+  root: null,
+  threshold: 0.1,
 });
 
 allSections.forEach(function (section) {
-    sectionObserver.observe(section);
-    section.classList.add('section--hidden');
+  sectionObserver.observe(section);
+  section.classList.add("section--hidden");
 });
 
 // ///open resume
@@ -108,12 +118,12 @@ allSections.forEach(function (section) {
 
 //section scroll.
 
-document.querySelector('.navlinks').addEventListener('click', function (e) {
-    e.preventDefault();
+document.querySelector(".navlinks").addEventListener("click", function (e) {
+  e.preventDefault();
 
-    // Matching strategy
-    if (e.target.classList.contains('navlink')) {
-        const id = e.target.getAttribute('href');
-        document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
-    }
+  // Matching strategy
+  if (e.target.classList.contains("navlink")) {
+    const id = e.target.getAttribute("href");
+    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+  }
 });
