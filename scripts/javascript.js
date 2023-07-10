@@ -49,6 +49,7 @@ $(document).ready(function () {
         });
         $(".modal").animate({ opacity: 0 }, 1500, function () {
           $(this).css("display", "none");
+          $("body #first").css("display", "block");
         });
       });
   }, 0);
