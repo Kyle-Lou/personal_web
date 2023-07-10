@@ -349,7 +349,7 @@ body ul li figure img {
   max-width: 150rem;
   max-height: 150rem;
   justify-content: center;
-  background-color: rgb(241, 240, 240);
+  background-color: rgb(6, 6, 6);
   padding: 6rem 8rem;
   box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
   z-index: 1000;
@@ -542,9 +542,27 @@ body {
 }
 
 .modal-content {
-  font-size: 2em;
+  font-size: 4em;
 }
 
 .modal__header {
   margin-top: 20%;
+  color: white;
+}
+
+.overlay,
+.modal {
+  display: none;
+}
+
+.blackout {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 900;
+  display: none;
+  opacity: 0;
 }

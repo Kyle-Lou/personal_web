@@ -14,21 +14,45 @@ function myFunction() {
   }
 }
 
+//greeting according to time
 $(document).ready(function () {
-  $(".overlay").css("display", "flex").hide().fadeIn();
-  $(".modal").css("display", "flex").hide().fadeIn();
+  let date = new Date();
+  let hours = date.getHours();
+  let greeting;
 
-  setTimeout(function () {
-    $(".overlay").animate({ opacity: 0 }, 1500, "linear", function () {
-      $(this).css("display", "none");
-    });
-    $(".modal").animate({ opacity: 0 }, 1500, "linear", function () {
-      $(this).css("display", "none");
-    });
-  }, 0);
+  if (hours >= 4 && hours < 12) {
+    greeting = "Good morning, I'm Kyle";
+  } else if (hours >= 12 && hours < 18) {
+    greeting = "Good afternoon, I'm Kyle";
+  } else if (hours >= 18 || hours < 4) {
+    greeting = "Good evening, I'm Kyle";
+  }
+
+  $("#Kyle").text(greeting);
 });
 
-// Remaining code as is ...
+//fade in and fade out
+$(document).ready(function () {
+  $(".overlay, .modal")
+    .css({ opacity: 0, display: "flex" })
+    .animate({ opacity: 1 }, 2000);
+
+  setTimeout(function () {
+    $(".blackout")
+      .css({ display: "block" })
+      .animate({ opacity: 1 }, 500, function () {
+        $(".overlay").animate({ opacity: 0 }, 1500, function () {
+          $(this).css("display", "none");
+          $(".blackout").animate({ opacity: 0 }, 500, function () {
+            $(this).css("display", "none");
+          });
+        });
+        $(".modal").animate({ opacity: 0 }, 1500, function () {
+          $(this).css("display", "none");
+        });
+      });
+  }, 0);
+});
 
 // Carousel for Life Page
 const SLIDES = $(".slide");
@@ -126,4 +150,22 @@ document.querySelector(".navlinks").addEventListener("click", function (e) {
     const id = e.target.getAttribute("href");
     document.querySelector(id).scrollIntoView({ behavior: "smooth" });
   }
+});
+
+$(document).ready(function () {
+  let birthDate = new Date("2002-10-26T03:00:00");
+
+  function calculateLivedSeconds() {
+    let now = new Date();
+    let differenceInMilliseconds = now - birthDate;
+    let differenceInSeconds = Math.floor(differenceInMilliseconds / 1000);
+
+    $("#seconds-lived").text(differenceInSeconds.toLocaleString());
+  }
+
+  calculateLivedSeconds();
+
+  setInterval(function () {
+    calculateLivedSeconds();
+  }, 1000);
 });
