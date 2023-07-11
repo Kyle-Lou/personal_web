@@ -72,7 +72,7 @@ $(".rbtn").click(function () {
 });
 
 function nextSlide() {
-  if (nextNum >= 3) {
+  if (nextNum >= 4) {
     nextNum = 0;
   } else {
     nextNum++;
@@ -83,7 +83,7 @@ function nextSlide() {
 
 function prevSlide() {
   if (prevNum <= 0) {
-    prevNum = 3;
+    prevNum = 4;
   } else {
     prevNum--;
   }

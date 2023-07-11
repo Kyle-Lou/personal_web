@@ -1,353 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <link href="styles/site.css" rel="stylesheet">
+  <head>
+    <link href="styles/site.css" rel="stylesheet" />
     <title>Kyle Lou</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <section id="first">
-        <section class="subsection section">
-            <h1>Kyle Lou</h1>
-            <nav class="nav">
-                <ul class="navlinks">
-                    <li>
-                        <a class="navlink" href="#section1">About</a>
-                    </li>
-                    <li>
-                        <a class="navlink" href="#section2">Projects</a>
-                    </li>
-                    <li>
-                        <a class="navlink" href="#section3">Life</a>
-                    </li>
-                </ul>
-            </nav>
-            <div id="first-page">
-    <div id="first-block">
-    <h2 id="Kyle">
-        Hi, I'm Kyle
-    </h2>
-    <p id="lived">This interesting spirit has been </p>
-    <p> exploring this world</p>
-    <p> for  <span id="seconds-lived"></span> seconds.</p>
-  
-</div>
+      <section class="subsection section">
+        <h1>Kyle Lou</h1>
+        <nav class="nav">
+          <ul class="navlinks">
+            <li>
+              <a class="navlink" href="#section1">About</a>
+            </li>
+            <li>
+              <a class="navlink" href="#section2">Projects</a>
+            </li>
+            <li>
+              <a class="navlink" href="#section3">Life</a>
+            </li>
+          </ul>
+        </nav>
+        <div id="first-page">
+          <div id="first-block">
+            <h2 id="Kyle">Hi, I'm Kyle</h2>
+            <p id="lived">This interesting spirit has been</p>
+            <p>exploring this world</p>
+            <p>for <span id="seconds-lived"></span> seconds.</p>
+          </div>
 
-                <picture id="head">
-                    <!-- Source: (original work) Kyle Lou -->
-<!--                     <img id="headshot" src="linkedin.jpg" title="My Resume" alt="My Resume" onclick="openImg()"> -->
-                    <img id="headshot" src="linkedin.jpg">
-                </picture>
-            </div>
-        </section>
+          <picture id="head">
+            <!-- Source: (original work) Kyle Lou -->
+            <!--                     <img id="headshot" src="linkedin.jpg" title="My Resume" alt="My Resume" onclick="openImg()"> -->
+            <img id="headshot" src="linkedin.jpg" alt="'headshot" />
+          </picture>
+        </div>
+      </section>
     </section>
     <section class="subsection section" id="section1">
-        <div class="about subtitles">
-            <h1>About Me</h1>
-            <ul class="intro">
-                <li>
-                    <p>
-                        A rising junior at Cornell University, studying Computer Science.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        Originally from Shanghai, and go to school in the US.</p>
-                </li>
-                <li>
-                    <p>
-                        Love kayaking, backpacking, and just be out there in the woods.
-                    </p>
-                </li>
-            </ul>
+      <div class="about subtitles">
+        <h1>About Me</h1>
+        <ul class="intro">
+          <li>
+            <p>
+              A rising junior at Cornell University, studying Computer Science.
+            </p>
+          </li>
+          <li>
+            <p>Originally from Shanghai, and go to school in the US.</p>
+          </li>
+          <li>
+            <p>
+              Love kayaking, backpacking, and just be out there in the woods.
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div id="skills">
+        <div id="titleskill">
+          <h2>Skills:</h2>
         </div>
-        <div id='skills'>
-            <div id="titleskill">
-                <h2>
-                    Skills:
-                </h2>
-            </div>
-            <div id="skillnames">
-                <ul class="skilllist">
-                    <li id="java">
-                        Java
-                    </li>
-                      <li id="javascript">
-                        ReactJS
-                    </li>
-                    <li id="flask">
-                        Flask
-                    </li>
-                    <li id="html">
-                        HTML/CSS
-                    </li>
-                </ul>
-                <ul class="skilllist" id="list2">
-                    <li id="git">
-                        OCaml
-                    </li>
-                      <li id="r">
-                        R 
-                    </li>
-                    <li id="mysql">
-                        MySQL
-                    </li>
-                    <li id="python">
-                        Python
-                    </li>
-                </ul>
-            </div>
+        <div id="skillnames">
+          <ul class="skilllist">
+            <li id="java">Java</li>
+            <li id="javascript">ReactJS</li>
+            <li id="flask">Flask</li>
+            <li id="html">HTML/CSS</li>
+          </ul>
+          <ul class="skilllist" id="list2">
+            <li id="git">OCaml</li>
+            <li id="r">R</li>
+            <li id="mysql">MySQL</li>
+            <li id="python">Python</li>
+          </ul>
         </div>
+      </div>
     </section>
 
     <section class="section" id="section2">
-        <div class="twotitles subtitles">
-            <h1>
-                Projects
-            </h1>
+      <div class="twotitles subtitles">
+        <h1>Projects</h1>
+      </div>
+      <div class="subsection">
+        <h3>Customizable AI Chatbot</h3>
+        <div class="figurewrap">
+          <figure class="pro">
+            <!-- Source: (original work) Kyle Lou -->
+            <img src="popup.png" />
+            <img src="chatui.png" />
+          </figure>
+          <p class="figuretext" id="chatbot_text">
+            &#8226; In a team of two, created an AI chatbot project which
+            enables users to customize their own chatbot with training data by
+            builidng a "few-shot" model with OpenAI's GPT-3.5 engine.
+            <br />
+            <br />
+
+            &#8226; Built a backend dialogue tree management system with Flask,
+            and engineered two user interfaces with ReactJS and relevant
+            interactions with the server, such as synchronous updates
+            <br />
+            <br />
+
+            &#8226; Manipulated the prompt engineering in the backend to
+            fine-tune the performance of chatbot and performed model testing
+            with confusion matrix for the clients from Cornell’s psychology and
+            education departments
+          </p>
         </div>
-         <div class="subsection">
-            <h3>
-                Banking WebPage
-            </h3>
-            <div class="figurewrapcrit">
-                <figure class="pro">
-                    <!-- Source: (original work) Kyle Lou -->
-                    <img src="BankingPage.png" alt="BankingPage">
-                </figure>
-                <p class="figuretext" id="bank">
-
-                    &#8226; Built a webpage for a hypothetical interactive webpage for a digital banking
-                    company
-                    using
-                    JavaScript;
-                    <br>
-                    <br>
-
-                    &#8226; Used DOM manipulation to realize features like Lazy Loading Images, sliders,
-                    and
-                    sticky
-                    navigation
-                    bar
-                </p>
-
-
-            </div>
+      </div>
+      <div class="subsection" id="crit">
+        <h3 id="crittitle">Critter World</h3>
+        <div class="figurewrapcrit">
+          <video width="500" height="460" controls>
+            <source src="critterworld.mp4" type="video/mp4" />
+          </video>
+          <p
+            class="figuretext"
+            id="crittertext"
+            style="max-width: 40%; margin: 0 auto"
+          >
+            &#8226; Collaborated with two teammates on a Java program that
+            simulates evolving artificial life for the Cornell CS 2112 honor
+            class final project
+            <br />
+            <br />
+            &#8226; On my part , I built a parser that generates abstract syntax
+            trees and tested using fault injection (mutation of action rules),
+            implemented a multi-threading system between the simulator and user
+            interface under the Model-View-Controller design pattern to promote
+            concurrency and performance, and programmed a critter's "smell"
+            functionality for food with Breadth-first Search
+          </p>
         </div>
-        <div class="subsection" id="crit">
-            <h3 id="crittitle">
-                Critter World
-            </h3>
-            <div class="figurewrapcrit">
-                <video width="500" height=460" controls>
-                      <source src="critterworld.mp4" type="video/mp4">
-                 </video>
-                <p class="figuretext" id="crittertext">
-                    &#8226; Collaborated with two teammates on a Java program that simulates evolving artificial
-                    life for the Cornell CS 2112 honor class final project
-                    <br>
-                    <br>
-                    &#8226;
-
-                    On my part , I built a parser that generates abstract syntax trees and tested using fault injection
-                    (mutation of action rules), implemented a multi-threading system between the simulator and user
-                    interface under the Model-View-Controller design pattern to promote concurrency and performance,
-                    and programmed a critter's "smell" functionality for food with Breadth-first Search
-                </p>
-            </div>
+      </div>
+      <div class="subsection">
+        <h3>Minesweeper in OCaml</h3>
+        <div class="figurewrap">
+          <figure class="pro">
+            <!-- Source: (original work) Kyle Lou -->
+            <img src="ocaml.png" alt="ocaml" />
+          </figure>
+          <p class="figuretext" id="mailing_text">
+            &#8226; Built a Minesweeper game in a team of three, applying
+            functional programming techniques in game setup and operation
+            <br />
+            <br />
+            &#8226; Designed data structures and logics in OCaml for game
+            operations such as bomb placement and exploration (DFS).
+            <br />
+            <br />
+            &#8226; Leveraged OCaml’s module system for structured and
+            maintainable game logic, promoting encapsulation and modularity
+          </p>
         </div>
-        <div class="subsection">
-            <h3>
-                MailingList
-            </h3>
-            <div class="figurewrap">
-                <figure class="pro">
-                    <!-- Source: (original work) Kyle Lou -->
-                    <img src="MailingList.png" alt="MailingList">
-                </figure>
-                <p class="figuretext">
-                    &#8226; Realized a mailing list webpage using NodeJS to connect MySQL database and an
-                    interactive
-                    advertisement
-                    web,
-                    which can
-                    be used in real-life campaigns for recruitment or business needs and support dynamic data
-                    extraction
-                </p>
-            </div>
+      </div>
+      <div class="subsection">
+        <h3>2D Snowboarder and Delivery Man games</h3>
+        <div class="figurewrapcrit">
+          <figure class="pro">
+            <!-- Source: (original work) Kyle Lou -->
+            <img src="Snowboarder.png" alt="snowboarder" />
+          </figure>
+          <p class="figuretext" id="snowboarder_text">
+            &#8226; Self-taught game development through a course on C# and
+            Unity at Udemy<br />
+            <br />
+
+            &#8226; Built a snowboarder game with C# script to design character
+            features and object interactions, which enables users to realize
+            speed boosting and snowboard rotation on keyboards, combining
+            triggerable visual and sound effects
+          </p>
         </div>
-        <div class="subsection">
-            <h3>
-                Banking WebPage
-            </h3>
-            <div class="figurewrapcrit">
-                <figure class="pro">
-                    <!-- Source: (original work) Kyle Lou -->
-                    <img src="BankingPage.png" alt="BankingPage">
-                </figure>
-                <p class="figuretext" id="bank">
-
-                    &#8226; Built a webpage for a hypothetical interactive webpage for a digital banking
-                    company
-                    using
-                    JavaScript;
-                    <br>
-                    <br>
-
-                    &#8226; Used DOM manipulation to realize features like Lazy Loading Images, sliders,
-                    and
-                    sticky
-                    navigation
-                    bar
-                </p>
-
-
-            </div>
+      </div>
+      <div class="subsection">
+        <h3>MailingList</h3>
+        <div class="figurewrap">
+          <figure class="pro">
+            <!-- Source: (original work) Kyle Lou -->
+            <img src="MailingList.png" alt="MailingList" />
+          </figure>
+          <p class="figuretext" id="mailing_text">
+            &#8226; Realized a mailing list webpage using NodeJS to connect
+            MySQL database and an interactive advertisement web, which can be
+            used in real-life campaigns for recruitment or business needs and
+            support dynamic data extraction
+          </p>
         </div>
-        <div class="subsection">
-            <h3>
-                2D Snowboarder and Delivery Man games
-            </h3>
-            <div class="figurewrap">
-                <figure class="pro">
-                    <!-- Source: (original work) Kyle Lou -->
-                    <img src="Snowboarder.png" alt="BankingPage">
-                </figure>
-                <p class="figuretext">
-                    &#8226; Self-taught game development through a course on C# and Unity at Udemy<br>
-                    <br>
-
-                    &#8226; Built a snowboarder
-                    game
-                    with C# script to design character features and
-                    object
-                    interactions,
-                    which
-                    enables
-                    users to
-                    realize speed boosting and snowboard rotation on keyboards, combining triggerable
-                    visual and
-                    sound
-                    effects
-                </p>
-            </div>
-        </div>
+      </div>
     </section>
 
     <section class="subsection section" id="section3">
-        <div class="twotitles subtitles">
+      <div class="twotitles subtitles">
         <h1>Life</h1>
       </div>
-        <div id="lifeca">
-            <button class="lbtn btnpair">&larr;</button>
-            <ul class="caro">
-                <li class="slide">
-                    <h4>Kayaking at Tupper Lake</h4>
-                    <figure class="odd">
-                        <!-- Source: (original work) Kyle Lou -->
-                        <img src="Kayaking.jpg" alt="Kayaking">
-                        <figcaption>
-                            This August, I went kayaking at Tupper Lake with my friends. This is my first time kayaking,
-                            and
-                            I just fell
-                            in love
-                            with it! More kayaking trip to come!
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22869.86302951757!2d-74.47624062879885!3d44.23315766274824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccb401edb5fb6f9%3A0xe6bc665c8201d492!2sTupper%20Lake%2C%20NY%2012986!5e0!3m2!1sen!2sus!4v1669919935336!5m2!1sen!2sus"
-                                width="360" height="280" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="slide">
-                    <h4>Hiking at Adirondack</h4>
-                    <figure class="even">
-                        <!-- Source: (original work) Kyle Lou -->
-                        <img src="Hiking.jpg" alt="Hiking">
-                        <figcaption>
-                            Also in August, I did a day hiking at the Haystack Mountains in central Adirondack also with
-                            friends. We went on a
-                            16km trail,
-                            and it took as around 4hours to completed the entire trip. Very awesome experience overall!
-                            It
-                            was
-                            all worth
-                            it when I
-                            finally summited and saw the spectacular views of the High Peaks Wilderness.
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2855.8462600614034!2d-74.05324648440522!3d44.2925504791046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccb1cfc02d6ddbd%3A0x6a6fb81762a84e11!2sHaystack%20Mountain%20Trailhead!5e0!3m2!1sen!2sus!4v1669920228525!5m2!1sen!2sus"
-                                width="360" height="280" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="slide">
-                    <h4>Backpacking at Finger Lake Trails</h4>
-                    <figure class="odd">
-                        <!-- Source: (original work) Kyle Lou -->
-                        <img src="Backpacking.jpg" alt="Backpacking">
-                        <figcaption>
-                            Before the start of my sophomore year at Cornell, I joined a 5-day backpacking trip in the
-                            Finger
-                            Lakes trail at Ithaca. This is one of the best ways to start my journey at Cornell: making
-                            so
-                            many
-                            friends before the semester starts and throwing myself out in the woods!
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46792.858854168786!2d-76.49435563305879!3d42.33067717293141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d07f6b1479460b%3A0xccd0405690bf62ad!2sFinger%20Lakes%20Trail%2C%20Abbott%20Loop!5e0!3m2!1sen!2sus!4v1669920279293!5m2!1sen!2sus"
-                                width="360" height="280" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="slide">
-                    <h4>Vacation trip to Hawaii</h4>
-                    <figure class="even">
-                        <!-- Source: (original work) Kyle Lou -->
-                        <img src="Hawaii.jpg" alt="Hawaii">
-                        <figcaption>
-                            In early June, I travelled to Hawaii with my high school friends. We watched sharks in the
-                            ocean,
-                            jumped off bridges, tasted the best Hawaiian foods. This is the most incredible vaction that
-                            I
-                            have
-                            ever had since graduating from high school.
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29102.858579720967!2d-159.3782062084234!3d21.953826246069703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c071edf7f893619%3A0xe4b8e328ce58146f!2sNinini%20Point%20Lighthouse!5e0!3m2!1sen!2sus!4v1669920316715!5m2!1sen!2sus"
-                                width="360" height="280" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </figcaption>
-                    </figure>
-                </li>
-            </ul>
-            <button class="rbtn btnpair">&rarr;</button>
-        </div>
+      <div id="lifeca">
+        <button class="lbtn btnpair">&larr;</button>
+        <ul class="caro">
+          <li class="slide">
+            <h4>Hiking at Mt.Rainier</h4>
+            <figure class="odd">
+              <!-- Source: (original work) Kyle Lou -->
+              <img src="rainier.jpg" alt="rainier" />
+              <figcaption>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21831.35847500302!2d-121.73396019999998!3d46.845268499999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490d32b9038c235%3A0x435913e4fd7f5844!2sMt.%20Rainier%20Ingram%20Flats!5e0!3m2!1sen!2sus!4v1689114212499!5m2!1sen!2sus"
+                  width="360"
+                  height="280"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="slide">
+            <h4>Stargazing in Washington Wilderness</h4>
+            <figure class="even">
+              <!-- Source: (original work) Kyle Lou -->
+              <img src="stargazing.jpg" alt="starga" />
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2952023.003000647!2d-121.63130838360607!3d47.52840209572995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549f4eab186a1b17%3A0xfebaa290042ee9b0!2sPalouse%20Falls%20State%20Park!5e0!3m2!1sen!2sus!4v1689114504853!5m2!1sen!2sus"
+                width="360"
+                height="280"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                id="starmap"
+              ></iframe>
+            </figure>
+          </li>
+          <li class="slide">
+            <h4>Backpacking at Finger Lake Trails</h4>
+            <figure class="odd">
+              <!-- Source: (original work) Kyle Lou -->
+              <img src="Backpacking.jpg" alt="Backpacking" id="backpackpic" />
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46792.858854168786!2d-76.49435563305879!3d42.33067717293141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d07f6b1479460b%3A0xccd0405690bf62ad!2sFinger%20Lakes%20Trail%2C%20Abbott%20Loop!5e0!3m2!1sen!2sus!4v1669920279293!5m2!1sen!2sus"
+                width="360"
+                height="280"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                id="backpackmap"
+              ></iframe>
+            </figure>
+          </li>
+          <li class="slide">
+            <h4>Vacation Trip to Hawaii</h4>
+            <figure class="even">
+              <!-- Source: (original work) Kyle Lou -->
+              <img src="Hawaii.jpg" alt="Hawaii" id="hawaiipic" />
+
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1851.2975501747442!2d-159.4563503434162!3d21.873148344978162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c071a97c5564d5b%3A0x2fa8c81b52f14083!2sPoipu%20Beach!5e0!3m2!1sen!2sus!4v1689116271047!5m2!1sen!2sus"
+                width="360"
+                height="280"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                id="hawaiimap"
+              ></iframe>
+            </figure>
+          </li>
+          <li class="slide">
+            <h4>Spring Break at Miami</h4>
+            <figure class="odd">
+              <!-- Source: (original work) Kyle Lou -->
+              <img src="miami.jpg" alt="miami" id="miamipic" width="100" />
+              <figcaption>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114964.60333624692!2d-80.38517885773035!3d25.782324621251888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2sMiami%2C%20FL!5e0!3m2!1sen!2sus!4v1689115357360!5m2!1sen!2sus"
+                  width="360"
+                  height="280"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+        <button class="rbtn btnpair">&rarr;</button>
+      </div>
     </section>
     <section id="end">
-        <h3>
-            Proudly made by myself : )
-        </h3>
-        <ul class="endnote">
-            <li>
-                <p> yl3572@cornell.edu</p>
-            </li>
-            <li>
-                <p> 470-601-4052</p>
-            </li>
-        </ul>
+      <h3>Proudly made by myself : )</h3>
+      <ul class="endnote">
+        <li>
+          <p>yl3572@cornell.edu</p>
+        </li>
+        <li>
+          <p>470-601-4052</p>
+        </li>
+      </ul>
     </section>
     <div class="blackout"></div>
-    <div class="overlay hidden">
-    </div>
+    <div class="overlay hidden"></div>
     <div class="modal hidden">
-
-        <h2 class="modal__header">
-            Welcome to Kyle's world
-        </h2>
+      <h2 class="modal__header">Welcome to Kyle's world</h2>
     </div>
     <script src="scripts/jquery-3.6.1.js"></script>
     <script src="scripts/javascript.js"></script>
-</body>
-
+  </body>
 </html>

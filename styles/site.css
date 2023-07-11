@@ -71,9 +71,10 @@ body figure figcaption {
 }
 
 #crittertext {
+  padding-top: 4rem;
   margin-top: 5%;
-  width: 30%;
-  padding-left: 8rem;
+  padding-left: 5rem;
+  padding-right: 3rem;
 }
 
 #end h3 {
@@ -487,6 +488,7 @@ iframe {
 #section2 {
   background-color: rgb(0, 0, 0);
   color: white;
+  padding-bottom: 10rem;
 }
 
 #skills {
@@ -553,11 +555,6 @@ body {
   color: black;
 }
 
-/* .overlay,
-.modal {
-  display: none;
-} */
-
 .blackout {
   position: fixed;
   top: 0;
@@ -568,4 +565,48 @@ body {
   z-index: 900;
   display: none;
   opacity: 0;
+}
+
+#chatbot_text {
+  padding-right: 5rem;
+}
+
+#mailing_text {
+  padding-right: 3rem;
+}
+
+#snowboarder_text {
+  padding-left: 7rem;
+}
+
+figure img {
+  transition: transform 0.5s ease;
+}
+figure img:hover {
+  transform: scale(1.2);
+}
+
+#starmap {
+  padding-left: 4rem;
+  padding-top: 2rem;
+}
+
+#backpackmap {
+  padding-top: 4rem;
+}
+
+#hawaiimap {
+  padding-top: 4rem;
+}
+
+#backpackpic {
+  padding-right: 6rem;
+}
+
+#hawaiipic {
+  padding-left: 6rem;
+}
+
+#miamipic {
+  padding-left: 6rem;
 }
