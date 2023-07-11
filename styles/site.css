@@ -1,4 +1,4 @@
-body #first {
+body .subsection {
   display: none;
 }
 #headshot {
@@ -553,10 +553,10 @@ body {
   color: black;
 }
 
-.overlay,
+/* .overlay,
 .modal {
   display: none;
-}
+} */
 
 .blackout {
   position: fixed;
