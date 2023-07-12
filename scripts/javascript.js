@@ -33,6 +33,7 @@ $(document).ready(function () {
 
 //fade in and fade out
 $(document).ready(function () {
+  $("body").addClass("no-scroll");
   $(".overlay, .modal")
     .css({ opacity: 0, display: "flex" })
     .animate({ opacity: 1 }, 2000);
@@ -50,6 +51,7 @@ $(document).ready(function () {
         $(".modal").animate({ opacity: 0 }, 1500, function () {
           $(this).css("display", "none");
           $("body .subsection").css("display", "block");
+          $("body").removeClass("no-scroll");
         });
       });
   }, 0);
@@ -169,4 +171,19 @@ $(document).ready(function () {
   setInterval(function () {
     calculateLivedSeconds();
   }, 1000);
+});
+
+document.querySelector(".navlinks").addEventListener("click", function (e) {
+  e.preventDefault();
+
+  if (e.target.classList.contains("navlink")) {
+    const id = e.target.getAttribute("href");
+    const section = document.querySelector(id);
+
+    section.scrollIntoView({ behavior: "smooth" });
+
+    setTimeout(function () {
+      section.classList.remove("section--hidden");
+    }, 800);
+  }
 });
